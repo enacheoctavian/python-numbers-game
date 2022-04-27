@@ -1,7 +1,6 @@
 import socket
 
 
-
 class Server:
     # we are connecting to the client from within the server
     def __init__(self):
@@ -9,7 +8,6 @@ class Server:
         self.server_socket.bind(('127.0.0.1', 28000))
         self.server_socket.listen(1)
         self.conn_socket, self.client_address = self.server_socket.accept()
-
 
 
 class Client:
