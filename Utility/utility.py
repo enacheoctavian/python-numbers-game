@@ -2,7 +2,7 @@ import random
 
 
 def getrandomnumber():
-    random.randint(1, 100)
+    return random.randint(1, 100)
 
 
 def compare(mynumber, guess):
@@ -12,3 +12,10 @@ def compare(mynumber, guess):
         return 0
     if mynumber < guess:
         return 2
+
+
+def validator(number):
+    if 0 < number < 101:
+        return 1
+    return 0
+
